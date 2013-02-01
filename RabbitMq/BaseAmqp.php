@@ -11,6 +11,7 @@ abstract class BaseAmqp
     protected $consumerTag;
     protected $exchangeDeclared = false;
     protected $queueDeclared = false;
+    protected $routingKey = '';
 
     protected $exchangeOptions = array(
         'passive' => false,
